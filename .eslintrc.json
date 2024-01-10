@@ -1,0 +1,27 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  },
+  "extends": ["airbnb-base", "airbnb-typescript/base", "prettier"],
+  "plugins": ["prettier"],
+  "overrides": [
+    {
+      "files": ["*.schema.ts", "errors.ts"],
+      "rules": {
+        "max-classes-per-file": "off"
+      }
+    },
+    {
+      "files": ["*"],
+      "rules": {
+        "no-param-reassign": "off"
+      }
+    },
+    {
+      "files": ["*"],
+      "rules": {
+        "class-methods-use-this": "off"
+      }
+    }
+  ]
+}
